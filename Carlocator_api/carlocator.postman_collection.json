@@ -1,0 +1,1029 @@
+{
+	"info": {
+		"_postman_id": "3173ae6c-df55-4ff2-9f80-30b19404312f",
+		"name": "carlocator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "dealer_signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"pomamype@kellychibale-researchgroup-uct.com\",\n    \"username\": \"mub01234\",\n    \"password\": \"mubashir@01234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dealer/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dealer",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dealer_verify_otp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"pomamype@kellychibale-researchgroup-uct.com\",\n    \"otp\": \"104041\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dealer/verifyotp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dealer",
+						"verifyotp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dealer_signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"pomamype@kellychibale-researchgroup-uct.com\",\n    \"password\": \"mubashir@01234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dealer/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dealer",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dealer_forgot_password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"sehavef856@xitudy.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dealer/forgotpassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dealer",
+						"forgotpassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dealer_forgot_confirm",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"sehavef856@xitudy.com\",\n    \"otp\":\"234223\",\n    \"newpassword\":\"mubashir@01234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dealer/forgotconfirm",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dealer",
+						"forgotconfirm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dealer_renew_token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"token\":\"eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.C5ji2GFIadGvQnDZOlgPrmZJmlq3W-ASR4C5FJXQED8Hcjw4BB81exnN5o6ypW6CVNHszAbquQay6POZNvJwaVdbQDqfJpU88cllXONg1019GtDCIeu6aFUlo5TTaYhjD-Fk5T461lawbJau6WO3uMS3tjbVQThs7HkSOGWEEMDz7YiT9eKceRyimFi67GLOrLUBDQS1NBF6pjvaQNZEdY_sgRhg8xOqpugMqxrW3jo9EF6y1iLUxEoTB9uNx68KGOMQRpzYOQFWjt5qBO4fY8iJ6-E-RjqGpo16zuHMdN_yBKvECpUq5Ib3QYjCKcUvp-CwDz-syH4TZcJTn-zxrA.62MGx-d_mRx51QJW.bQiZubDUmtPIXUYw_A6wwDY--NBhJR-qtEsd-mZloxbsZPm601kwMc87CUVWYJBFo5snHjGOys_dKHeufTQGZKz8NGhR-_P3HYjM-6FFBaNi65fPB06T_PjPXfOFy0kbM7PepXQuXBM9Y8AAW8Nql2fuKEG0apnbXjZhl40mafgexdmx_YRt2WHvcAlZwlXgL_Pia2sxYYZAcYdg-h05NzEKMY5e8i07rKTHe7-JNUCC5JCwV3ry7_Vwh9wtoFph4VYahO269T5TAJ6zwy1CIUdBGP5eGwieliFyuMJEVer-jNhamq2_Lre1l-ZNKKMpJB8zQPX-tEBXvKIOkwYIyyjc4PoxTsvvAO8IP2uPyMxUOizEHRGxMTUVqd0v9S8JPqSSWvgfrYD31opSInd9UZFnU-vUydlOZigH5pWvO_W_Oj-XT8PUZXIxOCfwKY3_MiSAjSsK_3GZBFRnQhNR6RA85RyDi0J7LsonlGKLwpnI6tl5mhjuBV9_SDrUiaK_E1_VMtAv_5bkHJce21VwY8vxPEKErwNXfrVqQcSsboEuNRrnEGmKAPU3R7XUi00KPuK03R3f4Z_k34l85ehoOFfcKx1K6SYxFoG_JjalOYtvw2O1v7u3cCqVuE4z-IUk2FyZZD3dJqxXYWxVZOtlKLu_r-HUSG0ss0hzswnSLGNm1vF0NysrZBpRL16MgKxph94I2L8M8u1X8dp0TS-SmMXWRwLsIEr-WQUT6KsT4QdhASvcWzO7EXSAaLY2LsE2WXDdbQ21Bbt8D2l3DJgU_q38MsEguzTPEJUbEMl-c-6lNkmGcjb-qHq3Mw2D8YQUAOxmm6NkAfwpGKNq-TyjSTXUH-PeLhsKfPaj6EwfEs2Sf5fSueQ74JTcH4KUZDUk2CX7TBiQxt-ObTXss4fTHG9QRmtYUhrIjCkOlKqH0CLgocXNUnuaslmtFN5-MSpaog7yiFq3oJ6iX7y7hlwQydZJUGxX4j2b0KWmco6-FN5n17cvmsuoZq456sui_JBra0C-eYutK2eQBc1A7Fmb6dWtrSprvTx6xhF2iRmGY385QD4ZW0GpnyMqdUdE4tpLXVtX-z5hR8df9Gufv7-jHxUA-NbRY0OUExSWghvDMulLvicV4eR2yS06UW-LI-QM3dmvP5QhajtymFHHLt8CkWacHzJAMKCzDHZYS2pgZhHEDH3V6Jw5JMWcqAPGy5-VCIT0JQxXOb8ZK5FA1--kTBdkj0k0nfm65Amhamf_yx5e5k7fYIJTX0HhVKXdENssSlvtd-Qyf3ziRtmpAMIROpbs5ytmfFxTRL0f0yFlkH0pxf9q5UuVdbYEeg.GkgJERIO9hj1lwGLxkGvpQ\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/renewtoken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"renewtoken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dealer_signout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"token\":\"eyJraWQiOiIxRkd4MnM5ckFpNThuSEhcLzQ1N05ydk5yTFY4R0cxOXZCb1REQmo3bzZTMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIwZTFmNjE2NS05OTU1LTQyYWQtYTlmZS04Y2UxMDk2MzU2ZmQiLCJjb2duaXRvOmdyb3VwcyI6WyJTYWxlc01hbmFnZXIiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfU0N5S2ZDVFg3IiwiY2xpZW50X2lkIjoiMnMyZmJybTQxb3RjZnEzdmczYmNwbmh1Z2YiLCJvcmlnaW5fanRpIjoiOTkwZDIwYWYtYjVlMi00YmRiLWIwYzQtN2IzNTQ1OWE3NjA5IiwiZXZlbnRfaWQiOiJkMmZjNzQ0NS04OTlkLTQzOTYtODU3Yi0wYzlhYmJlMjQzNzYiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjYyNjE5ODM3LCJleHAiOjE2NjI2MjAxMzcsImlhdCI6MTY2MjYxOTgzNywianRpIjoiMjU1ZTU1NTEtMWQxMi00OTM3LTkyMTMtYzJiNDZiZmRjZGZhIiwidXNlcm5hbWUiOiIwZTFmNjE2NS05OTU1LTQyYWQtYTlmZS04Y2UxMDk2MzU2ZmQifQ.vXz5x-5rpbHab0ObAAXijfUYxINpA4ILw2cQVoXrS5V_3B0xhHrToD1CUJ_3TIZIYEQWYq_dggo57xI7z_thxLt3w-b7PK4mSiDml-UmSEnUxiy2fRl0n6wDw6qWPPRK0AUxoTQAlbh8tKsIS4_iSDeaYc-f7POxXXimIeFNNNRBWXjDZjoVRPaaaPIfkJFW7KCjhTcgwBCQf2RXtY3GvEiEQcLbwY4ZhVZ5tnAsF2pnqLw_OSj7hROeZSz25L53i3AogcDIXyquOVpHrJj9oOxFyaWMI9G9IbQ469R3k87qY-Wc6thqGpRKCWuu4axYWikIqJLleJtzRsNN-SWXLA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dealer/signout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dealer",
+						"signout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_vehicle",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJraWQiOiIxRkd4MnM5ckFpNThuSEhcLzQ1N05ydk5yTFY4R0cxOXZCb1REQmo3bzZTMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIwZTFmNjE2NS05OTU1LTQyYWQtYTlmZS04Y2UxMDk2MzU2ZmQiLCJjb2duaXRvOmdyb3VwcyI6WyJTYWxlc01hbmFnZXIiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfU0N5S2ZDVFg3IiwiY2xpZW50X2lkIjoiMnMyZmJybTQxb3RjZnEzdmczYmNwbmh1Z2YiLCJvcmlnaW5fanRpIjoiYzkzN2Y4MTAtNjg0MC00YzA3LWI0MzItMzU2MGYzYzVhYTBjIiwiZXZlbnRfaWQiOiJiM2JmMDYwOS00NjQ4LTQxM2MtYmVlNy1hOTk0YWM3YzhlODIiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjYyODA2MTA0LCJleHAiOjE2NjI4MDY0MDQsImlhdCI6MTY2MjgwNjEwNCwianRpIjoiYThlMWQyZDAtNDYxMy00N2YwLTg5YjItMWFkZmU2MjVmMWU0IiwidXNlcm5hbWUiOiIwZTFmNjE2NS05OTU1LTQyYWQtYTlmZS04Y2UxMDk2MzU2ZmQifQ.PpUOejZe9umBmKvqXbErF4nYJbCfhryOCIzRkpxn30aE5hn43R5XliL_ImXAbhy8eWKGHVB3S_WFvviWgTAomsMd7Lajxcy8hiz7xZAhQidtDPUdLCnahw8lHntPa94Tidc2VszUplI3TR_aUc65So2mlyKyOy1L5YWOFLjUtK7QhqLdlXohfIItVaL68LsjymU10W8F_hEVvFguDmrmKUYcnedtwbMINdw55HzEp_eYmlQf_3WUjWeUa_Ymyv0Et2SHjywaYWgav7El3qTs9CWaqfrykg_xXgX3MNcMOoQd7IpXVoNbYIgC3YIcxrgeZoa7_bAZisPkp1YSt8laHw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"veh_name\":\"honda\",\n    \"stock_no\":2,\n    \"vin_no\":\"13456576ss\",\n    \"lic_plate\":\"addad1232\",\n    \"brand_make\":\"hundai\",\n    \"model\":\"1998\",\n    \"manufacture_year\":\"1998\",\n    \"veh_color\":\"blue\",\n    \"transmission_style\":\"automatic\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/vehicle/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vehicle",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dealer_forgot_confirm",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"sehavef856@xitudy.com\",\n    \"otp\":\"234223\",\n    \"newpassword\":\"mubashir@01234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dealer/forgotconfirm",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dealer",
+						"forgotconfirm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_all_vehicles_with_filter",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJraWQiOiIxRkd4MnM5ckFpNThuSEhcLzQ1N05ydk5yTFY4R0cxOXZCb1REQmo3bzZTMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjZWVkYzg5MS1iNzlhLTQ5ZDMtOWYzOS01YWQ1YjBkNDFjZDMiLCJjb2duaXRvOmdyb3VwcyI6WyJTYWxlc01hbmFnZXIiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfU0N5S2ZDVFg3IiwiY2xpZW50X2lkIjoiMnMyZmJybTQxb3RjZnEzdmczYmNwbmh1Z2YiLCJldmVudF9pZCI6IjY4MmRlZTExLWFjNzYtNGYwOC05YzdlLWViMzc0ZGZhYzQyMSIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2NjgwNTYzMjIsImV4cCI6MTY2ODE0MjcyMiwiaWF0IjoxNjY4MDU2MzIyLCJqdGkiOiI1OTMzNzUzOS01NzA1LTQyMmUtYjkzMC0yNmI5NTAyZGVmMDUiLCJ1c2VybmFtZSI6ImNlZWRjODkxLWI3OWEtNDlkMy05ZjM5LTVhZDViMGQ0MWNkMyJ9.j-DOJ-F5q9q72Y2D9JTpjqnLZodVlNu44U0PZw7I7udvh8mHIpBtz5mMNDLBUdAW8iJzs36DIEFpgiMgJfEtwowrhTOL-s1BIz-zNYLNdXDwRoAaA1sxW6c-QosNes8U7Hj3yy_Mi-2Ln9rVhmGRotPsJdGm9zJ7z13VHcyZ67nVO-wjKCvyQE_zZbcsKQP-5RlU7h--mRLyyIj8pJWPKpjZSzF5w5_xqmVGKen9MDHJ1IVs__WYDvhNqTlZw4JSnbb9FxeLkuHMZ0TlAdzHFkDTYqgoJeXAyqwCC_CbEW4P8cMzUssuzElkZ6-D3bhjhhgH8Z1KGpTVJ5Is5JK3GQ",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/vehicle/all?json={\n\t\"limit\":10,\n\t\"page\":1,\n\t\"keys\":true,\n\t\"staff\":false,\n   \"search\":{ \n    \"model\":{\n\t\t\"value\":\"1998\"\n\t},\n\t\"veh_color\":{\n\t\t\"value\":\"blue\"\n\t},\n    \"veh_available\":{\n\t\t\"value\":true\n\t},\n    \"veh_name\":{\n\t\t\"value\":\"honda\"\n\t},\n    \"year\":{\n\t\t\"value\":\"1998\"\n\t}\n    }\n}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vehicle",
+						"all"
+					],
+					"query": [
+						{
+							"key": "json",
+							"value": "{\n\t\"limit\":10,\n\t\"page\":1,\n\t\"keys\":true,\n\t\"staff\":false,\n   \"search\":{ \n    \"model\":{\n\t\t\"value\":\"1998\"\n\t},\n\t\"veh_color\":{\n\t\t\"value\":\"blue\"\n\t},\n    \"veh_available\":{\n\t\t\"value\":true\n\t},\n    \"veh_name\":{\n\t\t\"value\":\"honda\"\n\t},\n    \"year\":{\n\t\t\"value\":\"1998\"\n\t}\n    }\n}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_multiple_vehicles",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJraWQiOiIxRkd4MnM5ckFpNThuSEhcLzQ1N05ydk5yTFY4R0cxOXZCb1REQmo3bzZTMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjNjM3ZjI0ZC0xYmUwLTRkMDctYTM5Ni0xOWU2NjViMWQ4MmIiLCJjb2duaXRvOmdyb3VwcyI6WyJTYWxlc01hbmFnZXIiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfU0N5S2ZDVFg3IiwiY2xpZW50X2lkIjoiMnMyZmJybTQxb3RjZnEzdmczYmNwbmh1Z2YiLCJvcmlnaW5fanRpIjoiYTZiZTU0NjAtNGUzYi00NmM0LTk0YWItZmE5YWQwNTA1Y2MyIiwiZXZlbnRfaWQiOiI4Y2NhZjU3OS03NGQ3LTRjODMtODMxZS00ZmIwMmJjZTljZmEiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjY2MzMyMjYxLCJleHAiOjE2NjY0MTg2NjEsImlhdCI6MTY2NjMzMjI2MSwianRpIjoiMjlmMDJmM2UtNzJhNS00OGY1LWJjNmItZjQ4ODFjYzdkNWZkIiwidXNlcm5hbWUiOiJjNjM3ZjI0ZC0xYmUwLTRkMDctYTM5Ni0xOWU2NjViMWQ4MmIifQ.D7CiRl8vYvqYYK9BtjlLe7m1xg722RgkDngx3GPkIur2Nu9frrTkHWDrZtmhXfXEfQ1U8dENbWs0sQcVbeF_Dv8ZxVtBzVkhhbjz62oZQ4kY2VnzTV0OFUjbtGbPMWd2ylshfUab74oKM2OtpTp40mPaajaSo5XX5sTHgM8hey5YGEdwGlB7NKY03IsYvnz_REWISS61QFCbcQag7dlqgCcXa0JZbj-sPI_uNYq_rvdLf5C5REE8XstavJev-pBooRuB1n3Kno0CZlkaICxm5SIZNRKhZjV65J6NvFh17K3G3eg9JzvE9rjJ3Dnw_jefX9s4YFBm3o2VaYosx8Yd9w",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"vehicles\": [\n        {\n            \"dealer_id\":\"2\",\n            \"veh_name\": \"honda\",\n            \"vin_no\": \"13456576ss\",\n            \"lic_plate\": \"addad1232\",\n            \"brand_make\": \"hundai\",\n            \"model\": \"1998\",\n            \"manufacture_year\": \"1998\",\n            \"car_status_id\":\"1\",\n            \"veh_color\": \"blue\",\n            \"transmission_style\": \"automatic\"\n        },\n        {\n            \"dealer_id\":\"2\",\n            \"veh_name\": \"Ahmed\",\n            \"stock_no\": 2,\n            \"vin_no\": \"13456576ss\",\n            \"lic_plate\": \"addad1232\",\n            \"brand_make\": \"Hannanananananana\",\n            \"model\": \"1998\",\n            \"manufacture_year\": \"1998\",\n            \"veh_color\": \"blue\",\n            \"car_status_id\":\"1\",\n            \"transmission_style\": \"automatic\"\n        },\n        {\n            \"dealer_id\":\"33\",\n            \"veh_name\": \"Tucson\",\n            \"stock_no\": 2,\n            \"vin_no\": \"13456576ss\",\n            \"lic_plate\": \"addad1232\",\n            \"brand_make\": \"Hyundia\",\n            \"model\": \"1998\",\n            \"manufacture_year\": \"1998\",\n            \"veh_color\": \"blue\",\n            \"car_status_id\":\"1\",\n            \"transmission_style\": \"automatic\"\n        },\n         {\n            \"dealer_id\":\"33\",\n            \"veh_name\": \"Tucson\",\n            \"stock_no\": 2,\n            \"vin_no\": \"13456576ss\",\n            \"lic_plate\": \"addad1232\",\n            \"brand_make\": \"Hyundia\",\n            \"model\": \"1998\",\n            \"manufacture_year\": \"1998\",\n            \"veh_color\": \"blue\",\n            \"car_status_id\":\"1\",\n            \"transmission_style\": \"automatic\"\n        },\n         {\n            \"dealer_id\":\"33\",\n            \"veh_name\": \"Tucson\",\n            \"stock_no\": 2,\n            \"vin_no\": \"13456576ss\",\n            \"lic_plate\": \"addad1232\",\n            \"brand_make\": \"Hyundia\",\n            \"model\": \"1998\",\n            \"manufacture_year\": \"1998\",\n            \"veh_color\": \"blue\",\n            \"car_status_id\":\"1\",\n            \"transmission_style\": \"automatic\"\n        },\n         {\n            \"dealer_id\":\"33\",\n            \"veh_name\": \"Tucson\",\n            \"stock_no\": 2,\n            \"vin_no\": \"13456576ss\",\n            \"lic_plate\": \"addad1232\",\n            \"brand_make\": \"Hyundia\",\n            \"model\": \"1998\",\n            \"manufacture_year\": \"1998\",\n            \"veh_color\": \"blue\",\n            \"car_status_id\":\"1\",\n            \"transmission_style\": \"automatic\"\n        },\n         {\n            \"dealer_id\":\"33\",\n            \"veh_name\": \"Tucson\",\n            \"stock_no\": 2,\n            \"vin_no\": \"13456576ss\",\n            \"lic_plate\": \"addad1232\",\n            \"brand_make\": \"Hyundia\",\n            \"model\": \"1998\",\n            \"manufacture_year\": \"1998\",\n            \"veh_color\": \"blue\",\n            \"car_status_id\":\"1\",\n            \"transmission_style\": \"automatic\"\n        }, {\n            \"dealer_id\":\"33\",\n            \"veh_name\": \"Tucson\",\n            \"stock_no\": 2,\n            \"vin_no\": \"13456576ss\",\n            \"lic_plate\": \"addad1232\",\n            \"brand_make\": \"Hyundia\",\n            \"model\": \"1998\",\n            \"manufacture_year\": \"1998\",\n            \"veh_color\": \"blue\",\n            \"car_status_id\":\"1\",\n            \"transmission_style\": \"automatic\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/vehicle/multiple",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vehicle",
+						"multiple"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "staff_signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJraWQiOiIxRkd4MnM5ckFpNThuSEhcLzQ1N05ydk5yTFY4R0cxOXZCb1REQmo3bzZTMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWIyYWEyOC03MTU2LTQwNGEtYmZjZC04MTA0YzE0NTg2NmUiLCJjb2duaXRvOmdyb3VwcyI6WyJTYWxlc01hbmFnZXIiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfU0N5S2ZDVFg3IiwiY2xpZW50X2lkIjoiMnMyZmJybTQxb3RjZnEzdmczYmNwbmh1Z2YiLCJldmVudF9pZCI6ImE4YTIzMjI0LWM2MWItNGNiNy05Njc0LTcyMTZlOGQzYjg4ZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2Njg3NjQ5NjIsImV4cCI6MTY2ODg1MTM2MSwiaWF0IjoxNjY4NzY0OTYyLCJqdGkiOiI3NDZjNzIzNS01NTZmLTQ0ODEtODQzYS03YzZlNGM1MjYxODciLCJ1c2VybmFtZSI6Ijc5YjJhYTI4LTcxNTYtNDA0YS1iZmNkLTgxMDRjMTQ1ODY2ZSJ9.pVzWTjAuEKcK1QyKAofnZmZgLRRwpncbsqImgTZI7NQRr8BtUvduHvckt0CCbI2mybH9fk6GNBGmGTvVzEkl5GajxAS6313wEUfh3Niqnf49ZF-RoeLV9deFQAY6WsIZvG5oc145-fm4WFxKIn36gkm3_vGDiMZ-C1h-dK6pZZPWy3ZbageTSQ7wJiOneUuLieyMRFkSt6XMaM2umBUvtXMUKG2JPtaYV_ZqzPladJn3GmRUiTpCkx92t9DZiRtV6je2NN1NR50UhIRhDbjV9CLjDRMNbFzXqBM6S-qmINqCXpqxpFWWqOq-P0CkHEosx7GGP0UJ_lNyggWXiPFlCQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email_work\": \"ihfj3wdewhen@gmail.com\",\n    \"first_name\": \"ahmed\",\n    \"last_name\": \"kha\",\n    \"username\": \"ahmedw3dewkhan\",\n    \"profile_image\": \"luchnahi\",\n    \"postal_code\": \"owfhjw\",\n    \"password\": \"mubashir@01234\",\n    \"phone_number\": \"1234567\",\n    \"email_personal\": \"mubasr@gmail.com\",\n    \"multi_login\": true,\n    \"staff_role_name\": \"ITAdministrator\",\n    \"staff_info\": \"sdfsdfdsf\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dealer/staff/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dealer",
+						"staff",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateKey",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJraWQiOiIxRkd4MnM5ckFpNThuSEhcLzQ1N05ydk5yTFY4R0cxOXZCb1REQmo3bzZTMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIwOGNiNzY1Zi02NjA4LTQ3YjAtOTZiNy1jMjZkMzA2M2FjZWYiLCJjb2duaXRvOmdyb3VwcyI6WyJTYWxlc01hbmFnZXIiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfU0N5S2ZDVFg3IiwiY2xpZW50X2lkIjoiMnMyZmJybTQxb3RjZnEzdmczYmNwbmh1Z2YiLCJldmVudF9pZCI6Ijg5ODczNTg5LTJmMDQtNDk0Zi05NjIxLTQzYjk3YTNiNmIxNyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2Njg1OTQwNDksImV4cCI6MTY2ODY4MDQ0OSwiaWF0IjoxNjY4NTk0MDQ5LCJqdGkiOiI0OTAzNWUxYy1iZDg4LTRlZjQtYmRmNi1kM2Y4ZjViMDNkYTQiLCJ1c2VybmFtZSI6IjA4Y2I3NjVmLTY2MDgtNDdiMC05NmI3LWMyNmQzMDYzYWNlZiJ9.pJ3EVqyseId7PZczpDSkdZ8h5GDaLcGSfynwcwLXS36H8_CGr1MT60W2Taqjfh1dHskcNDK0xr1DEzBFyS_CB7dgHCTYktA5wMc2_TgD_FKpSjiGqNrWwg-cL-hpavLyH1NUhUSLMFXfQd0n9_KQCHDM3p9f-r_udQiLEpdHKS3jcOPNk0g3keOfw8lXk2YgU6YZKPvIC6w_Vd5xeAn3EDP_EVVd2QBOawe_lIeGVzEai-1ZTk_NifgF1TaNswLCDCorpoMRvT1beBpt1meICYhYDaLMOXff5kbvKQoC8f3TlNseiN0H6MqD37Rjs0b5dJI28nWQqxv4QE5zW4RaYg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"veh_id\": \"1c3d4698-8783-41b2-a6ba-952311257af5\",\n    \"loc_id\": \"123e4567-e89b-12d3-a456-426614174000\",\n    \"key_name\": \"123e4567-e89b-12d3-a456-426614174000\",\n    \"key_accessible\": \"123e4567-e89b-12d3-a456-426614174000\",\n    \"received\": \"123e4567-e89b-12d3-a456-426614174000\",\n    \"received_from\": \"123e4567-e89b-12d3-a456-426614174000\",\n    \"email_personal\": \"mubashir@gmail.com\",\n    \"received_by\":\"123e4567-e89b-12d3-a456-426614174000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/vehicle/createkey",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vehicle",
+						"createkey"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_vehicle_keys",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJraWQiOiIxRkd4MnM5ckFpNThuSEhcLzQ1N05ydk5yTFY4R0cxOXZCb1REQmo3bzZTMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI4YWFhZmQwMi03ZTBkLTQ5YmEtOTdlMi0wMzZjZGU3NWVkMTMiLCJjb2duaXRvOmdyb3VwcyI6WyJTYWxlc01hbmFnZXIiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfU0N5S2ZDVFg3IiwiY2xpZW50X2lkIjoiMnMyZmJybTQxb3RjZnEzdmczYmNwbmh1Z2YiLCJvcmlnaW5fanRpIjoiYWJiZjNmZTAtODdjZS00YTc3LWExNWItNzdhYmMwNWFlNTU5IiwiZXZlbnRfaWQiOiI0NjNkYTI0Yy1mYjlkLTQwNjItOWFhZC1hY2MwMjQ3NDU2MWQiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjYzNjc1MTU4LCJleHAiOjE2NjM3NjE1NTgsImlhdCI6MTY2MzY3NTE1OCwianRpIjoiZjQ1NTc1YWQtNzRkYi00NTVhLWJiNWEtMDk4NGU4ZmVkYjNlIiwidXNlcm5hbWUiOiI4YWFhZmQwMi03ZTBkLTQ5YmEtOTdlMi0wMzZjZGU3NWVkMTMifQ.AYoND8hmjLXcV9qL0q-PZh34cbvcUdgIvKExayMHOU5zhqADFCxSLtNaoj0U5fsOoZvWtVENgY0-uiQw-w1iZZx99D3x04yfb_wbw2FE9hN9YJ2tenSXXXN05ZwG-2J9hvPd9Te-nA2eJUV6sBLIGtuqf21_trG9TtjRNMNH1BhU8TdthAWutDmQyx1eljd0dajhn7vPoAIUXCFOscGPcuLJobQUZFSwTtiwv90thkwaXyuN67-JwGxLGSFy3X-mvf1-IixB0OZtcO75a8WOxUdU_ED6ZhVfl1vzZBqRpM2nREQojTRC_hWs27sFuPF-LPkLUaQOR0QcKG6NY4z2vA",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/vehicle/keys/196bb6b2-b10a-4f0e-b3f7-d92201386614",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vehicle",
+						"keys",
+						"196bb6b2-b10a-4f0e-b3f7-d92201386614"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "staff_signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"mubb012344@gmail.com\",\n    \"password\":\"mubashir@01234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dealer/staff/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dealer",
+						"staff",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "staff_reset_password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJraWQiOiIxRkd4MnM5ckFpNThuSEhcLzQ1N05ydk5yTFY4R0cxOXZCb1REQmo3bzZTMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI4YWY0OGE3ZC0xMTJhLTRmN2UtYTE2Yy1lOTdhNWEzYmViNWUiLCJjb2duaXRvOmdyb3VwcyI6WyJJVEFkbWluaXN0cmF0b3IiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfU0N5S2ZDVFg3IiwiY2xpZW50X2lkIjoiMnMyZmJybTQxb3RjZnEzdmczYmNwbmh1Z2YiLCJvcmlnaW5fanRpIjoiMzk0OGI1ZDEtYjY0Mi00Y2VhLTg0OWMtNDJiODBlNmNjNGQ4IiwiZXZlbnRfaWQiOiJiNmZiZTRhNC04NmU2LTQyNWUtYTBlNi02OTQ2YjQzNjdiNDkiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjYzNjAwMjUyLCJleHAiOjE2NjM2ODY2NTIsImlhdCI6MTY2MzYwMDI1MiwianRpIjoiODZhZTRhMjktZjhjNS00YmQ5LWI2ZjMtMDdlZGI5ZTE2NDE5IiwidXNlcm5hbWUiOiI4YWY0OGE3ZC0xMTJhLTRmN2UtYTE2Yy1lOTdhNWEzYmViNWUifQ.v5KggM0X1mhWXQws9zhI6uN98Ez1nuP5crhEi48TZNQbhQMG6sR5zyiaM5fArXTvZPL_eG7mFm61D110LXeOuXMRT3qkmtMEamP7aQAgORLTsYJyZ7yzYvD1clS459bt36EeLNRU8e3ZG_mGAQ8u1fX1nz_nouI0h4hM_vBmUUiTbcqxSmnhd3fTYfLgBbM8vz-DjVfRhRdNW5QBP_EDsem_OgxDtWd4DW_Wp_CTBVFijDpTFKLK42Mtwxy8pNoqeSZDsr4ZVF_nlrH29Egl6yGCaeJVRcafflMtGOI1D45HNwPBLpF1DLXtwlIw_k9MEt0ktPLP3aAARx2wLv9ECw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"password\":\"mubashir@01234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dealer/staff/resetpassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dealer",
+						"staff",
+						"resetpassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_staff_members",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJraWQiOiIxRkd4MnM5ckFpNThuSEhcLzQ1N05ydk5yTFY4R0cxOXZCb1REQmo3bzZTMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3NmVhYTkyMC1iNzY3LTQ5OWMtOGY3ZC02OTE4ZWZhODEyZDQiLCJjb2duaXRvOmdyb3VwcyI6WyJTYWxlc01hbmFnZXIiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfU0N5S2ZDVFg3IiwiY2xpZW50X2lkIjoiMnMyZmJybTQxb3RjZnEzdmczYmNwbmh1Z2YiLCJvcmlnaW5fanRpIjoiZWU0NDU5MzgtY2E3YS00Y2RlLTg3NzgtYmYwMTJlYzZmZDgyIiwiZXZlbnRfaWQiOiIyYWIyMDQxMS03Y2FmLTRlYjAtOGY2MC0yMzllYmQwMjU2NWUiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjYzNzY1Nzc3LCJleHAiOjE2NjM3NjYwNzcsImlhdCI6MTY2Mzc2NTc3NywianRpIjoiMGMzODI0YzUtNWFmOS00ZjA3LWIwOGUtMzk0ZTViZmFjMmZkIiwidXNlcm5hbWUiOiI3NmVhYTkyMC1iNzY3LTQ5OWMtOGY3ZC02OTE4ZWZhODEyZDQifQ.v_zgbCjJ_2MqdQ1rTX2tbov4n6A0kKUUUkCrLmbRSaavx9-82-4DlFriQYqE_Fnv9r3Iem_UGWXFmJbC7kINGgahaDJ4V3m_Jvx5U_KrAx_oJrh2uv8ogOn5srK57kWq-GL4nhSRQi6pJ1ruLVbvdwrptzavasTNennx_we9X1eYedUomL5L6vtGvvpXO8YDt4yuomCJ3sW6JcU-aBMkuCXkAXSqVmX_dTi-ncTNe-Ek4ABTVmuCKzmxxYXFS2Pls4_l_y_EzAr5knj9aERd_ifn_HHZjp12HdgfnE_qp2LQNO7g3iEcXy5A8_H7tHs41VxNudyJ11Mjy18GJj-xRA",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/dealer/staff/getdealerstaff",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dealer",
+						"staff",
+						"getdealerstaff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "csv_to_json",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJraWQiOiIxRkd4MnM5ckFpNThuSEhcLzQ1N05ydk5yTFY4R0cxOXZCb1REQmo3bzZTMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3NmVhYTkyMC1iNzY3LTQ5OWMtOGY3ZC02OTE4ZWZhODEyZDQiLCJjb2duaXRvOmdyb3VwcyI6WyJTYWxlc01hbmFnZXIiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfU0N5S2ZDVFg3IiwiY2xpZW50X2lkIjoiMnMyZmJybTQxb3RjZnEzdmczYmNwbmh1Z2YiLCJvcmlnaW5fanRpIjoiZWY3YTY1ODYtYWI1OS00ZjBmLThiMzAtNDExMjdkNmUyY2I2IiwiZXZlbnRfaWQiOiI2NzkxZDQ0MS0zNGU4LTRmN2ItOGJhNS1iZWI0NzA4ZTI4YzMiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjYzOTM1MDkyLCJleHAiOjE2NjM5MzUzOTIsImlhdCI6MTY2MzkzNTA5MiwianRpIjoiNzA5YmU5ZDktNTE4ZC00MjI0LWE2NzItY2YxMjM2NWI3ZmFlIiwidXNlcm5hbWUiOiI3NmVhYTkyMC1iNzY3LTQ5OWMtOGY3ZC02OTE4ZWZhODEyZDQifQ.eiZMSC-x7_vT6FWsuI9uAeDfQxaNK_-HxnyMh7Nu0_M5PzgyF4ttLoQBooa-xVy8uOyRY6VD_TEshnh04NXMfhDdxFMseOJegbaOTY-O9s6SxkpWmr_7zKSqNzLg2B5ENafdSO2ulAv671DKLakGLc2DP-reEDyoMqVvrzBaW4HI0ilNZbsU2y7Yq_UAWFuUXbwT2-3WbdWiXRQja9_s-1eGMVSJqrO7L_LgRIoBnhBAFL4jy1-OkdmaSikOYu_BmVT4uCait8-lclokIzBfBFRcHhU_rl3P3v7ARmaz6LXW0wUBkme6ZgTBmddaqPCPpYwCLmAjMwlXAQc3JQb0dQ",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/ahmed_ali/Downloads/vehiclesFileexcel.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/vehicle/csvtojson",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vehicle",
+						"csvtojson"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_assigned_keys",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJraWQiOiIxRkd4MnM5ckFpNThuSEhcLzQ1N05ydk5yTFY4R0cxOXZCb1REQmo3bzZTMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjNjM3ZjI0ZC0xYmUwLTRkMDctYTM5Ni0xOWU2NjViMWQ4MmIiLCJjb2duaXRvOmdyb3VwcyI6WyJTYWxlc01hbmFnZXIiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfU0N5S2ZDVFg3IiwiY2xpZW50X2lkIjoiMnMyZmJybTQxb3RjZnEzdmczYmNwbmh1Z2YiLCJvcmlnaW5fanRpIjoiNWU1YzNkMDUtYmMyNy00NTBiLWIyYzMtMzg4OWZmNjJhYTgzIiwiZXZlbnRfaWQiOiJhMDA1YTI3Mi0xYzI3LTQ5ODYtYTM3Ny0xNmYxYTc4MGI1NDgiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjY1OTg3ODU2LCJleHAiOjE2NjYwNzQyNTYsImlhdCI6MTY2NTk4Nzg1NiwianRpIjoiZGY0N2M2YTgtZGZlYi00NGQyLThjOGMtNDI3MDBkMWQzYWU4IiwidXNlcm5hbWUiOiJjNjM3ZjI0ZC0xYmUwLTRkMDctYTM5Ni0xOWU2NjViMWQ4MmIifQ.pC19xolMDf0PtzCbMW4Z2td3VAPFlBMz0FqT2s1o0ENBW6AtfKDF9TqYnBSDZtF7bj0CSuev9xo8CNtrSCvoD377Cr_ade8iPxQGzhoLlp5qJS5vf6uPP7v0edx1qLJ0GCmGWKqqwDQWQBneot8oiFOGXYqhxDvZ0QST-O_B-BGs5sC2ZBIsRUT-a6dGz5Fw-JwuXETXmlhh8GWYwBP0jdxsa5T5PDYdx72BpZsL5KkAl3DDuXxffj0NVqhl4JxkBRwEhM2L_OqAUKnkOGl_R2lDk3E3kr9teonHwtZHuM9UrwaQB2R2R6Sr8Bni4dknZ13hzCaopOh8G-LgpGPRTg",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/vehicle/assignedkeys",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vehicle",
+						"assignedkeys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "s3_file_upload",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJraWQiOiIxRkd4MnM5ckFpNThuSEhcLzQ1N05ydk5yTFY4R0cxOXZCb1REQmo3bzZTMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3NmVhYTkyMC1iNzY3LTQ5OWMtOGY3ZC02OTE4ZWZhODEyZDQiLCJjb2duaXRvOmdyb3VwcyI6WyJTYWxlc01hbmFnZXIiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfU0N5S2ZDVFg3IiwiY2xpZW50X2lkIjoiMnMyZmJybTQxb3RjZnEzdmczYmNwbmh1Z2YiLCJvcmlnaW5fanRpIjoiOTRhMGQ4MDktN2ExOC00Y2YzLTlkODgtZWY5MzhlYWFjOTk3IiwiZXZlbnRfaWQiOiJlNDM2MTNmMi0yM2I1LTQzZWUtODhlNy0wNjY2NDVlOGZiNzYiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjY0NDY0MjkxLCJleHAiOjE2NjQ1NTA2OTEsImlhdCI6MTY2NDQ2NDI5MSwianRpIjoiMGQyYmQ5N2ItMzJhMy00MGNjLWFiZGQtZjg1YTVhOTIwYTAwIiwidXNlcm5hbWUiOiI3NmVhYTkyMC1iNzY3LTQ5OWMtOGY3ZC02OTE4ZWZhODEyZDQifQ.MpPaAJ4guaCZvx6A6dzxqL1Q_84Bv1P0Cgz1_hF-87AhUWJm2XmQxxx649C6mxS7b2DPg6WXucbYOGUJsmByoKsl9aGUzPhJgTO4-zbBExbTlfGyzrhq32QQwXTrZWEd0FcvNI-79PhndiE-Y3z6mubedg6YZZsqhbhJAE4tU1kZZzNfbqGzqvXmyhJ9mZD8NZ9zAyRN12qb2kBirCEj1LXZtgL7X9F7dX4vBTnk8G3xb06MTk12-ryn8S1LW15EGuJo4taDGSfUPgsejZTP-IJ4GXgK-XT-eN8XKAH2Av1gm74HCFYZW8pahYA7L_YXhcrn7MwDDa3QFMQa-x74ZA",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/ahmed_ali/Downloads/WhatsApp Image 2022-09-17 at 9.55.31 PM.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/dealer/s3/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dealer",
+						"s3",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_dealer_setting",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJraWQiOiIxRkd4MnM5ckFpNThuSEhcLzQ1N05ydk5yTFY4R0cxOXZCb1REQmo3bzZTMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjNjM3ZjI0ZC0xYmUwLTRkMDctYTM5Ni0xOWU2NjViMWQ4MmIiLCJjb2duaXRvOmdyb3VwcyI6WyJTYWxlc01hbmFnZXIiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfU0N5S2ZDVFg3IiwiY2xpZW50X2lkIjoiMnMyZmJybTQxb3RjZnEzdmczYmNwbmh1Z2YiLCJvcmlnaW5fanRpIjoiZjc4M2ZkOTktYmJhMi00ZWNkLTg1NzktZDU2OTk3MDVhOTQ0IiwiZXZlbnRfaWQiOiJmOGE5MTEwNi0wM2M3LTQwNDYtYmIxNy0wZmE5YTljZjg1YjIiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjY2MTczODgwLCJleHAiOjE2NjYyNjAyODAsImlhdCI6MTY2NjE3Mzg4MCwianRpIjoiZmZhNTY4YzgtMGI4OC00Njk0LWIwZDYtM2M5MTQwNDE3ZGRkIiwidXNlcm5hbWUiOiJjNjM3ZjI0ZC0xYmUwLTRkMDctYTM5Ni0xOWU2NjViMWQ4MmIifQ.R3Eqto_F0PPG43lXJNu18LDRSybfNR_A5CgNq3at_7BkAc4BxLNvYSAbmfqWh-RQmiik8uRZlfnynQHBMkD7Be-PXf5ozFW28uKJ9Epc005W1ZKbyqUoLLT749D8U8x5tMmR-UlQDIu5NQjGT_ewjKwO5Jww13R-QWsWPXFQu5l6cSEJ__JV8cplKbpmyaflWIN8fEdDk9zL3K12XApt5uFedzIar5L71GAMDn3NTay1cZ1rjt74gEu6YcrfmocKB81kSvwMiNGGG8MbJdel_Sc9PBIsWxVCBe1wXA2C_RTwfzAAQaLEY2TG5_w6nDvClmNA33lVLu1bL3VvMuC6OA",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"dealer\": {\n        \"region\": \"islam\",\n        \"city\": \"haripur\",\n        \"state\": \"Pakistan\",\n        \"postal_code\": 12344,\n        \"currency\": \"pkr\",\n        \"branch_name\": \"HBL\",\n        \"dlr_name\": \"Ahmed\",\n        \"short_name\": \"Malik\",\n        \"street1_address\": \"haripur\",\n        \"street2_address\": \"KSA\",\n        \"telephone\": 5235235,\n        \"website\": \"rnegnk4r4g.com\",\n        \"sic_code\": 123,\n        \"miles_km\": 41412,\n        \"dlr_discord\": \"reg4g\",\n        \"billing_period\": \"rere\",\n        \"invoice_method\": \"mk4mkr\",\n        \"payment_method\": \"fnwjnkl\",\n        \"dlr_cmnt\": \"4rg4\",\n        \"loc_note\": \"reg4g\",\n        \"dealership_logo\":\"nulllllllll\",\n        \"dealership_name\" : \"ubjcknw\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dealer/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dealer",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_vehicle",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJraWQiOiIxRkd4MnM5ckFpNThuSEhcLzQ1N05ydk5yTFY4R0cxOXZCb1REQmo3bzZTMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5NTViZDk0Zi1lZmI3LTRiNWMtYmExNC1lMzdjZjg4MWViMjQiLCJjb2duaXRvOmdyb3VwcyI6WyJTYWxlc01hbmFnZXIiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfU0N5S2ZDVFg3IiwiY2xpZW50X2lkIjoiMnMyZmJybTQxb3RjZnEzdmczYmNwbmh1Z2YiLCJvcmlnaW5fanRpIjoiMGM2Nzc1ZmQtODQzNy00OTRlLWI1MzMtMTVhNTFjYmIyYjJhIiwiZXZlbnRfaWQiOiI1MmE2ZDU0Mi03MzFhLTQzMzUtYjcxYi1hZWQxZDAyNWIzOWYiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjY1NTU0NjU2LCJleHAiOjE2NjU2NDEwNTYsImlhdCI6MTY2NTU1NDY1NiwianRpIjoiYmNkNDVkYjAtZmJlNC00NDIxLWJmMjEtZjhjNjEwMDU3ZGZjIiwidXNlcm5hbWUiOiI5NTViZDk0Zi1lZmI3LTRiNWMtYmExNC1lMzdjZjg4MWViMjQifQ.tTQBshNCfkPCyPg61oZoHLlAwRb0k1N7HUykACNg4jlVv1znqlparZJjL1tg9lkJr7SEfN44tVwGbasuKSTgZWqBfwS45oEeGnScF94hBXpJSZXC2_IV_v8SFn3goRJ1BtiArhi54zzSeJgfTGLgEGEJOM6R2u3CU6vQ67X8Yv9A7O2q34HoplgxG1lEiVQLIRIoMmI3955Qr1QHoDKS6eTIjypwRQjR7lM5ndNITW0jD-x6YnEM1mW0eUpbNpSCLnutSeKZQDXkAjY--s54878bpBUTmuxrLOpBqeumnUd15WvlfQVX0l0Xxw7Yzmhb5D3nBpuJE8SThSvpveSPoA",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"vehicle\": {\n        \"veh_name\": \"Lexsus\",\n        \"stock_no\": 2342,\n        \"vin\": \"13456576ss\",\n        \"lic_plate\": \"addad1232\",\n        \"make\": \"lx570\",\n        \"model\": \"2021\",\n        \"year\": \"2022\",\n        \"veh_color\": \"white\",\n        \"transmission_style\": \"automatic\",\n        \"map_color\": \"black\",\n        \"note\": \"gsfgsg\",\n        \"veh_available\": true\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/vehicle/update/deeed40d-c3ea-4487-affd-975db3ede96b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vehicle",
+						"update",
+						"deeed40d-c3ea-4487-affd-975db3ede96b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_vehicle_key",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJraWQiOiIxRkd4MnM5ckFpNThuSEhcLzQ1N05ydk5yTFY4R0cxOXZCb1REQmo3bzZTMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5NTViZDk0Zi1lZmI3LTRiNWMtYmExNC1lMzdjZjg4MWViMjQiLCJjb2duaXRvOmdyb3VwcyI6WyJTYWxlc01hbmFnZXIiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfU0N5S2ZDVFg3IiwiY2xpZW50X2lkIjoiMnMyZmJybTQxb3RjZnEzdmczYmNwbmh1Z2YiLCJvcmlnaW5fanRpIjoiN2NjZDJlYWMtZTVkZS00ODc1LWE4NzMtMjhmNzJhMDUzNzVhIiwiZXZlbnRfaWQiOiIxY2I5ODVjMi01ZGRjLTRjOTAtOGVlNi1iOWUzYzJmOWQ3NGEiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjY1NTg2MzY1LCJleHAiOjE2NjU2NzI3NjUsImlhdCI6MTY2NTU4NjM2NSwianRpIjoiNGMzMTY4YzctMTYxOS00YjBhLTljODktYWEzMWQzZTFjZWE1IiwidXNlcm5hbWUiOiI5NTViZDk0Zi1lZmI3LTRiNWMtYmExNC1lMzdjZjg4MWViMjQifQ.w5F-dYzaSAT4fhBOPcOOMYgthAwkbdPNSKpnXZot_IIrcua-As2mzPLgibL6rpeWW-NHet68i6nXnvFhYOiDuzq4scu0THhnxUYamGv3gy4cBS6cZKvXoRDNHyY4C4fLFL8thd97mLba2WnDF29cbTUYcaQMV7KNA4c8Po8xCAK5ZpTw3viYXIV9FmA8PVFkd9YYMYgb3pvqzcMEeG9KX5coPwgJZMjaafxGMQpF149QubJrH19YR4U0Rutvdi4RQzJe8Cj_2gMkm0os2NBoSidckzXhXnqfpyrSmKdwHUMG7W5LlyEL7ZyCKfcVTfZ7eBqruhyWY5HbavC5puyPaQ",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"key\": {\n        \"key_name\": \"kngbklfbnklnkl00\",\n        \"key_accessible\": \"123e4567-e89b-12d3-a456-426614174000\",\n        \"received\": \"123e4567-e89b-12d3-a456-426614174000\",\n        \"received_from\": \"123e4567-e89b-12d3-a456-426614174000\",\n        \"received_by\": \"123e4567-e89b-12d3-a456-426614174000\",\n        \"loc_name\":\"blablabl6945\",\n        \"key_available\": true\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/vehicle/key/update/e28220f8-3c95-49a4-aa8f-31b85e9fbe00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vehicle",
+						"key",
+						"update",
+						"e28220f8-3c95-49a4-aa8f-31b85e9fbe00"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "assign_unassign_key",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJraWQiOiIxRkd4MnM5ckFpNThuSEhcLzQ1N05ydk5yTFY4R0cxOXZCb1REQmo3bzZTMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjNjM3ZjI0ZC0xYmUwLTRkMDctYTM5Ni0xOWU2NjViMWQ4MmIiLCJjb2duaXRvOmdyb3VwcyI6WyJTYWxlc01hbmFnZXIiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfU0N5S2ZDVFg3IiwiY2xpZW50X2lkIjoiMnMyZmJybTQxb3RjZnEzdmczYmNwbmh1Z2YiLCJvcmlnaW5fanRpIjoiZTY1NjllM2UtMGUzNS00OTVkLTg1M2UtZTUwZGNjYzdiODQwIiwiZXZlbnRfaWQiOiJhNzc5N2M4NC1lODUxLTRmNDktOTA2NS0xOGFkMTUwMzE2NGMiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjY1OTg5OTkyLCJleHAiOjE2NjYwNzYzOTIsImlhdCI6MTY2NTk4OTk5MiwianRpIjoiZjM3ZWNjNWEtYjM5Ny00MjI3LTg5ZGEtODI4MTAwNjBjOTk5IiwidXNlcm5hbWUiOiJjNjM3ZjI0ZC0xYmUwLTRkMDctYTM5Ni0xOWU2NjViMWQ4MmIifQ.bAgu2fr0Gm0Rp_dw8nbDfZqon4b6rh_BRigkOI9z4WXrw05ByC22ZzG8DQxmR8A_ddFpPcsQ8cI5JVeb_pnq92NQ44i7mVixO0n5hQQfnW7lYdlPz0wy2qeTTIK5Mp4beelVpo3FJiFVDRmBYsvSuFD1E6eOyFrzRyfhYr3OyB32171MX7rBakPX6kSl0wTfQYLhG70zWKedwKozldiOBD2_9zT8_lAVRwwNyiT7uv_sj3qeOj3R3ESckrIcOgwFnYNYgjKz1FU968i1ZFrMJ5lnSzAhtYlCjD4gzGTnt9W2bD_RyK1FM1bHViYLrEB4QLZAADs47Gv7RYfnNwnKDg",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"veh_id\": \"fd34f755-e516-425f-bd0a-fddc534594da\",\n    \"key_id\": \"4f5bd689-f3e0-4cba-9e34-0361ec387ef5\",\n    \"staff_id\": \"0ca2387a-899f-4423-8c80-27bd1c55b6bc\",\n    \"key_assign_status\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/vehicle/assingunassignkey",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vehicle",
+						"assingunassignkey"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dealer_resend_otp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"email\": \"zatrenagne@vusra.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dealer/resend/otp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dealer",
+						"resend",
+						"otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_dealer_map",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJraWQiOiIxRkd4MnM5ckFpNThuSEhcLzQ1N05ydk5yTFY4R0cxOXZCb1REQmo3bzZTMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIwOGNiNzY1Zi02NjA4LTQ3YjAtOTZiNy1jMjZkMzA2M2FjZWYiLCJjb2duaXRvOmdyb3VwcyI6WyJTYWxlc01hbmFnZXIiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfU0N5S2ZDVFg3IiwiY2xpZW50X2lkIjoiMnMyZmJybTQxb3RjZnEzdmczYmNwbmh1Z2YiLCJldmVudF9pZCI6Ijg5ODczNTg5LTJmMDQtNDk0Zi05NjIxLTQzYjk3YTNiNmIxNyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2Njg1OTQwNDksImV4cCI6MTY2ODY4MDQ0OSwiaWF0IjoxNjY4NTk0MDQ5LCJqdGkiOiI0OTAzNWUxYy1iZDg4LTRlZjQtYmRmNi1kM2Y4ZjViMDNkYTQiLCJ1c2VybmFtZSI6IjA4Y2I3NjVmLTY2MDgtNDdiMC05NmI3LWMyNmQzMDYzYWNlZiJ9.pJ3EVqyseId7PZczpDSkdZ8h5GDaLcGSfynwcwLXS36H8_CGr1MT60W2Taqjfh1dHskcNDK0xr1DEzBFyS_CB7dgHCTYktA5wMc2_TgD_FKpSjiGqNrWwg-cL-hpavLyH1NUhUSLMFXfQd0n9_KQCHDM3p9f-r_udQiLEpdHKS3jcOPNk0g3keOfw8lXk2YgU6YZKPvIC6w_Vd5xeAn3EDP_EVVd2QBOawe_lIeGVzEai-1ZTk_NifgF1TaNswLCDCorpoMRvT1beBpt1meICYhYDaLMOXff5kbvKQoC8f3TlNseiN0H6MqD37Rjs0b5dJI28nWQqxv4QE5zW4RaYg",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"map\": [\n        {\n            \"map_name\": \"Map 1\",\n            \"map_coords\": [\n                {\n                    \"latitude\": 33.75272789965486,\n                    \"longitude\": 72.74215754854157\n                },\n                {\n                    \"latitude\": 33.7528762014652,\n                    \"longitude\": 72.74093446123078\n                },\n                {\n                    \"latitude\": 33.753419229213,\n                    \"longitude\": 72.74107930051758\n                },\n                {\n                    \"latitude\": 33.753316645179176,\n                    \"longitude\": 72.74223935591652\n                },\n                {\n                    \"latitude\": 33.75272066837434,\n                    \"longitude\": 72.74215754854157\n                },\n                {\n                    \"latitude\": 33.75272789965486,\n                    \"longitude\": 72.74215754854157\n                }\n            ],\n            \"parkings_lots\": [\n                {\n                    \"parking_name\": \"Parking 1\",\n                    \"parking_coords\": [\n                        {\n                            \"latitude\": 40.708408201574144,\n                            \"longitude\": -74.03844565712262\n                        },\n                        {\n                            \"latitude\": 40.70676920081413,\n                            \"longitude\": -74.03877020441342\n                        },\n                        {\n                            \"latitude\": 40.706904348016735,\n                            \"longitude\": -74.039955740798\n                        },\n                        {\n                            \"latitude\": 40.70700211390728,\n                            \"longitude\": -74.04006839357663\n                        },\n                        {\n                            \"latitude\": 40.708408201574144,\n                            \"longitude\": -74.03844565712262\n                        }\n                    ],\n                    \"zones\": [\n                        {\n                            \"zone_name\": \"Zone A\",\n                            \"zone_coords\": [\n                                 {\n                                    \"latitude\": 40.708408201574144,\n                                    \"longitude\": -74.03844565712262\n                                },\n                                {\n                                    \"latitude\": 40.70676920081413,\n                                    \"longitude\": -74.03877020441342\n                                },\n                                {\n                                    \"latitude\": 40.706904348016735,\n                                    \"longitude\": -74.039955740798\n                                },\n                                {\n                                    \"latitude\": 40.70700211390728,\n                                    \"longitude\": -74.04006839357663\n                                },\n                                {\n                                    \"latitude\": 40.708408201574144,\n                                    \"longitude\": -74.03844565712262\n                                }\n                            ],\n                            \"rows\": [\n                                {\n                                    \"rows_name\": \"Row 1\",\n                                    \"row_coords\": [ {\n                                            \"latitude\": 40.708408201574144,\n                                            \"longitude\": -74.03844565712262\n                                        },\n                                        {\n                                            \"latitude\": 40.70676920081413,\n                                            \"longitude\": -74.03877020441342\n                                        },\n                                        {\n                                            \"latitude\": 40.706904348016735,\n                                            \"longitude\": -74.039955740798\n                                        },\n                                        {\n                                            \"latitude\": 40.70700211390728,\n                                            \"longitude\": -74.04006839357663\n                                        },\n                                        {\n                                            \"latitude\": 40.708408201574144,\n                                            \"longitude\": -74.03844565712262\n                                        }\n                                        ],\n                                    \"slots\": [\n                                        {\n                                            \"spacing_number\": \"1\",\n                                            \"slot_id\": \"1\",\n                                            \"slot_coords\": [\n                                                {\n                                                    \"latitude\": 33.75325412943176,\n                                                    \"longitude\": 72.74107128693248\n                                                },\n                                                {\n                                                    \"latitude\": 33.753250784295716,\n                                                    \"longitude\": 72.74110079123164\n                                                },\n                                                {\n                                                    \"latitude\": 33.753216217882276,\n                                                    \"longitude\": 72.74109676791812\n                                                },\n                                                {\n                                                    \"latitude\": 33.75321510283644,\n                                                    \"longitude\": 72.74106592251445\n                                                },\n                                                {\n                                                    \"latitude\": 33.75325412943176,\n                                                    \"longitude\": 72.74107128693248\n                                                }\n                                            ]\n                                        },\n                                        {\n                                            \"spacing_number\": \"2\",\n                                            \"slot_id\": \"2\",\n                                            \"slot_coords\": [\n                                                {\n                                                    \"latitude\": 33.753245209068695,\n                                                    \"longitude\": 72.7411115200677\n                                                },\n                                                {\n                                                    \"latitude\": 33.753245209068695,\n                                                    \"longitude\": 72.74113431884433\n                                                },\n                                                {\n                                                    \"latitude\": 33.75321510283644,\n                                                    \"longitude\": 72.74113431884433\n                                                },\n                                                {\n                                                    \"latitude\": 33.75321064265301,\n                                                    \"longitude\": 72.74110481454517\n                                                },\n                                                {\n                                                    \"latitude\": 33.753245209068695,\n                                                    \"longitude\": 72.7411115200677\n                                                }\n                                            ]\n                                        },\n                                        {\n                                            \"spacing_number\": \"3\",\n                                            \"slot_id\": \"3\",\n                                            \"slot_coords\": [\n                                                {\n                                                    \"latitude\": 33.753237403750234,\n                                                    \"longitude\": 72.74115175320293\n                                                },\n                                                {\n                                                    \"latitude\": 33.753237403750234,\n                                                    \"longitude\": 72.74117589308406\n                                                },\n                                                {\n                                                    \"latitude\": 33.75320729751527,\n                                                    \"longitude\": 72.74117186977054\n                                                },\n                                                {\n                                                    \"latitude\": 33.75320729751527,\n                                                    \"longitude\": 72.74114370657588\n                                                },\n                                                {\n                                                    \"latitude\": 33.753237403750234,\n                                                    \"longitude\": 72.74115175320293\n                                                }\n                                            ]\n                                        },\n                                        {\n                                            \"spacing_number\": \"4\",\n                                            \"slot_id\": \"4\",\n                                            \"slot_coords\": [\n                                                {\n                                                    \"latitude\": 33.753231059618344,\n                                                    \"longitude\": 72.74119600965167\n                                                },\n                                                {\n                                                    \"latitude\": 33.75322994457271,\n                                                    \"longitude\": 72.74122953726436\n                                                },\n                                                {\n                                                    \"latitude\": 33.753197608243056,\n                                                    \"longitude\": 72.74122551395084\n                                                },\n                                                {\n                                                    \"latitude\": 33.753197608243056,\n                                                    \"longitude\": 72.74118930412914\n                                                },\n                                                {\n                                                    \"latitude\": 33.753231059618344,\n                                                    \"longitude\": 72.74119600965167\n                                                }\n                                            ]\n                                        },\n                                        {\n                                            \"spacing_number\": \"5\",\n                                            \"slot_id\": \"5\",\n                                            \"slot_coords\": [\n                                                {\n                                                    \"latitude\": 33.753222139252884,\n                                                    \"longitude\": 72.74124697162296\n                                                },\n                                                {\n                                                    \"latitude\": 33.75321879411559,\n                                                    \"longitude\": 72.74128452254917\n                                                },\n                                                {\n                                                    \"latitude\": 33.75319091796641,\n                                                    \"longitude\": 72.74127781702663\n                                                },\n                                                {\n                                                    \"latitude\": 33.753192033012546,\n                                                    \"longitude\": 72.74124428941394\n                                                },\n                                                {\n                                                    \"latitude\": 33.753222139252884,\n                                                    \"longitude\": 72.74124697162296\n                                                }\n                                            ]\n                                        },\n                                        {\n                                            \"spacing_number\": \"6\",\n                                            \"slot_id\": \"6\",\n                                            \"slot_coords\": [\n                                                {\n                                                    \"latitude\": 33.753212103840625,\n                                                    \"longitude\": 72.74130061580325\n                                                },\n                                                {\n                                                    \"latitude\": 33.753208758702925,\n                                                    \"longitude\": 72.74133280231143\n                                                },\n                                                {\n                                                    \"latitude\": 33.75318088255048,\n                                                    \"longitude\": 72.74132877899791\n                                                },\n                                                {\n                                                    \"latitude\": 33.75318088255048,\n                                                    \"longitude\": 72.74129659248973\n                                                },\n                                                {\n                                                    \"latitude\": 33.753212103840625,\n                                                    \"longitude\": 72.74130061580325\n                                                }\n                                            ]\n                                        },\n                                        {\n                                            \"spacing_number\": \"7\",\n                                            \"slot_id\": \"7\",\n                                            \"slot_coords\": [\n                                                {\n                                                    \"latitude\": 33.75320206842717,\n                                                    \"longitude\": 72.74135291887904\n                                                },\n                                                {\n                                                    \"latitude\": 33.75320206842717,\n                                                    \"longitude\": 72.74138376428272\n                                                },\n                                                {\n                                                    \"latitude\": 33.753165271901175,\n                                                    \"longitude\": 72.74138376428272\n                                                },\n                                                {\n                                                    \"latitude\": 33.75317753741159,\n                                                    \"longitude\": 72.74135425998355\n                                                },\n                                                {\n                                                    \"latitude\": 33.75320206842717,\n                                                    \"longitude\": 72.74135291887904\n                                                }\n                                            ]\n                                        },\n                                        {\n                                            \"spacing_number\": \"8\",\n                                            \"slot_id\": \"8\",\n                                            \"slot_coords\": [\n                                                {\n                                                    \"latitude\": 33.75319537815088,\n                                                    \"longitude\": 72.74140924526836\n                                                },\n                                                {\n                                                    \"latitude\": 33.753194263104795,\n                                                    \"longitude\": 72.74144277288104\n                                                },\n                                                {\n                                                    \"latitude\": 33.753159696668575,\n                                                    \"longitude\": 72.74144277288104\n                                                },\n                                                {\n                                                    \"latitude\": 33.753159696668575,\n                                                    \"longitude\": 72.74141058637287\n                                                },\n                                                {\n                                                    \"latitude\": 33.75319537815088,\n                                                    \"longitude\": 72.74140924526836\n                                                }\n                                            ]\n                                        },\n                                        {\n                                            \"spacing_number\": \"9\",\n                                            \"slot_id\": \"9\",\n                                            \"slot_coords\": [\n                                                {\n                                                    \"latitude\": 33.7531864577817,\n                                                    \"longitude\": 72.74146557165767\n                                                },\n                                                {\n                                                    \"latitude\": 33.7531864577817,\n                                                    \"longitude\": 72.74150312258388\n                                                },\n                                                {\n                                                    \"latitude\": 33.75314966124899,\n                                                    \"longitude\": 72.74150178147937\n                                                },\n                                                {\n                                                    \"latitude\": 33.753151891342334,\n                                                    \"longitude\": 72.74146423055316\n                                                },\n                                                {\n                                                    \"latitude\": 33.7531864577817,\n                                                    \"longitude\": 72.74146557165767\n                                                }\n                                            ]\n                                        },\n                                        {\n                                            \"spacing_number\": \"10\",\n                                            \"slot_id\": \"10\",\n                                            \"slot_coords\": [\n                                                {\n                                                    \"latitude\": 33.753183112643015,\n                                                    \"longitude\": 72.741524580256\n                                                },\n                                                {\n                                                    \"latitude\": 33.753183112643015,\n                                                    \"longitude\": 72.7415607900777\n                                                },\n                                                {\n                                                    \"latitude\": 33.75314074087506,\n                                                    \"longitude\": 72.74155944897319\n                                                },\n                                                {\n                                                    \"latitude\": 33.75314185592186,\n                                                    \"longitude\": 72.74151921583797\n                                                },\n                                                {\n                                                    \"latitude\": 33.753183112643015,\n                                                    \"longitude\": 72.741524580256\n                                                }\n                                            ]\n                                        },\n                                        {\n                                            \"spacing_number\": \"11\",\n                                            \"slot_id\": \"11\",\n                                            \"slot_coords\": [\n                                                {\n                                                    \"latitude\": 33.75309056375433,\n                                                    \"longitude\": 72.7410391004243\n                                                },\n                                                {\n                                                    \"latitude\": 33.753088333659406,\n                                                    \"longitude\": 72.74107128693248\n                                                },\n                                                {\n                                                    \"latitude\": 33.753047076892635,\n                                                    \"longitude\": 72.74106726361896\n                                                },\n                                                {\n                                                    \"latitude\": 33.75305153708459,\n                                                    \"longitude\": 72.74103507711078\n                                                },\n                                                {\n                                                    \"latitude\": 33.75309056375433,\n                                                    \"longitude\": 72.7410391004243\n                                                }\n                                            ]\n                                        },\n                                        {\n                                            \"spacing_number\": \"12\",\n                                            \"slot_id\": \"12\",\n                                            \"slot_coords\": [\n                                                {\n                                                    \"latitude\": 33.75308610356441,\n                                                    \"longitude\": 72.74108738018657\n                                                },\n                                                {\n                                                    \"latitude\": 33.75307941327909,\n                                                    \"longitude\": 72.74112090779926\n                                                },\n                                                {\n                                                    \"latitude\": 33.75303592641171,\n                                                    \"longitude\": 72.7411101789632\n                                                },\n                                                {\n                                                    \"latitude\": 33.75303815650801,\n                                                    \"longitude\": 72.74108201576854\n                                                },\n                                                {\n                                                    \"latitude\": 33.75308610356441,\n                                                    \"longitude\": 72.74108738018657\n                                                }\n                                            ]\n                                        },\n                                        {\n                                            \"spacing_number\": \"13\",\n                                            \"slot_id\": \"13\",\n                                            \"slot_coords\": [\n                                                {\n                                                    \"latitude\": 33.75306714775463,\n                                                    \"longitude\": 72.74113565994884\n                                                },\n                                                {\n                                                    \"latitude\": 33.75306714775463,\n                                                    \"longitude\": 72.74117186977054\n                                                },\n                                                {\n                                                    \"latitude\": 33.75302477592935,\n                                                    \"longitude\": 72.74115979982997\n                                                },\n                                                {\n                                                    \"latitude\": 33.75302477592935,\n                                                    \"longitude\": 72.74113163663532\n                                                },\n                                                {\n                                                    \"latitude\": 33.75306714775463,\n                                                    \"longitude\": 72.74113565994884\n                                                }\n                                            ]\n                                        },\n                                        {\n                                            \"spacing_number\": \"14\",\n                                            \"slot_id\": \"14\",\n                                            \"slot_coords\": [\n                                                {\n                                                    \"latitude\": 33.75305934241997,\n                                                    \"longitude\": 72.74118662192012\n                                                },\n                                                {\n                                                    \"latitude\": 33.75305934241997,\n                                                    \"longitude\": 72.74120942069675\n                                                },\n                                                {\n                                                    \"latitude\": 33.75302143078435,\n                                                    \"longitude\": 72.74120807959224\n                                                },\n                                                {\n                                                    \"latitude\": 33.75302143078435,\n                                                    \"longitude\": 72.74117723418857\n                                                },\n                                                {\n                                                    \"latitude\": 33.75305934241997,\n                                                    \"longitude\": 72.74118662192012\n                                                }\n                                            ]\n                                        },\n                                        {\n                                            \"spacing_number\": \"15\",\n                                            \"slot_id\": \"15\",\n                                            \"slot_coords\": [\n                                                {\n                                                    \"latitude\": 33.75304819194065,\n                                                    \"longitude\": 72.74122283174182\n                                                },\n                                                {\n                                                    \"latitude\": 33.75304819194065,\n                                                    \"longitude\": 72.74125099493648\n                                                },\n                                                {\n                                                    \"latitude\": 33.753015855542415,\n                                                    \"longitude\": 72.74125099493648\n                                                },\n                                                {\n                                                    \"latitude\": 33.753015855542415,\n                                                    \"longitude\": 72.74122417284633\n                                                },\n                                                {\n                                                    \"latitude\": 33.75304819194065,\n                                                    \"longitude\": 72.74122283174182\n                                                }\n                                            ]\n                                        \n                                        }\n                                    ]\n                                },\n                                        {\n                                        \"rows_name\": \"Row 2\",\n                                        \"slots\": [\n                                            {\n                                                \"spacing_number\": \"16\",\n                                                \"slot_id\": \"16\",\n                                                \"slot_coords\": [\n                                                    {\n                                                        \"latitude\": 33.75304373174852,\n                                                        \"longitude\": 72.7412737937131\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75304373174852,\n                                                        \"longitude\": 72.7413100035348\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75300359000885,\n                                                        \"longitude\": 72.74130598022128\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.7530091652516,\n                                                        \"longitude\": 72.74127781702663\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75304373174852,\n                                                        \"longitude\": 72.7412737937131\n                                                    }\n                                                ]\n                                            },\n                                            {\n                                                \"spacing_number\": \"17\",\n                                                \"slot_id\": \"17\",\n                                                \"slot_coords\": [\n                                                    {\n                                                        \"latitude\": 33.75303704145986,\n                                                        \"longitude\": 72.74133414341594\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75303704145986,\n                                                        \"longitude\": 72.74137035323764\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.753004705057435,\n                                                        \"longitude\": 72.74137035323764\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.753004705057435,\n                                                        \"longitude\": 72.74134084893848\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75303704145986,\n                                                        \"longitude\": 72.74133414341594\n                                                    }\n                                                ]\n                                            },\n                                            {\n                                                \"spacing_number\": \"18\",\n                                                \"slot_id\": \"18\",\n                                                \"slot_coords\": [\n                                                    {\n                                                        \"latitude\": 33.75303369631537,\n                                                        \"longitude\": 72.74139315201427\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75303369631537,\n                                                        \"longitude\": 72.74142802073146\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.753004705057435,\n                                                        \"longitude\": 72.74142936183597\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75300359000885,\n                                                        \"longitude\": 72.74139583422328\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75303369631537,\n                                                        \"longitude\": 72.74139315201427\n                                                    }\n                                                ]\n                                            },\n                                            {\n                                                \"spacing_number\": \"19\",\n                                                \"slot_id\": \"19\",\n                                                \"slot_coords\": [\n                                                    {\n                                                        \"latitude\": 33.75302700602595,\n                                                        \"longitude\": 72.74144813729907\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75302700602595,\n                                                        \"longitude\": 72.74149373485233\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75298909437604,\n                                                        \"longitude\": 72.74149373485233\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75299243952229,\n                                                        \"longitude\": 72.74145886613513\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75302700602595,\n                                                        \"longitude\": 72.74144813729907\n                                                    }\n                                                ]\n                                            },\n                                            {\n                                                \"spacing_number\": \"20\",\n                                                \"slot_id\": \"20\",\n                                                \"slot_coords\": [\n                                                    {\n                                                        \"latitude\": 33.75302143078435,\n                                                        \"longitude\": 72.74151251031543\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.753019200687625,\n                                                        \"longitude\": 72.74155676676418\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.752985749229666,\n                                                        \"longitude\": 72.74155676676418\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75298463418083,\n                                                        \"longitude\": 72.7415071458974\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75302143078435,\n                                                        \"longitude\": 72.74151251031543\n                                                    }\n                                                ]\n                                            },\n                                            {\n                                                \"spacing_number\": \"21\",\n                                                \"slot_id\": \"21\",\n                                                \"slot_coords\": [\n                                                    {\n                                                        \"latitude\": 33.753175307318905,\n                                                        \"longitude\": 72.74158492995883\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75317419227257,\n                                                        \"longitude\": 72.74163589193012\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.753134050593985,\n                                                        \"longitude\": 72.74163455082561\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.753134050593985,\n                                                        \"longitude\": 72.74158895327236\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.753175307318905,\n                                                        \"longitude\": 72.74158492995883\n                                                    }\n                                                ]\n                                            },\n                                            {\n                                                \"spacing_number\": \"22\",\n                                                \"slot_id\": \"22\",\n                                                \"slot_coords\": [\n                                                    {\n                                                        \"latitude\": 33.75316750199411,\n                                                        \"longitude\": 72.74166137291576\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75316750199411,\n                                                        \"longitude\": 72.74171233488704\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75312401517142,\n                                                        \"longitude\": 72.74170965267803\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.753127360312405,\n                                                        \"longitude\": 72.74166137291576\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75316750199411,\n                                                        \"longitude\": 72.74166137291576\n                                                    }\n                                                ]\n                                            },\n                                            {\n                                                \"spacing_number\": \"23\",\n                                                \"slot_id\": \"23\",\n                                                \"slot_coords\": [\n                                                    {\n                                                        \"latitude\": 33.75315858162201,\n                                                        \"longitude\": 72.74173111035014\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75315858162201,\n                                                        \"longitude\": 72.74178207232143\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75311286470051,\n                                                        \"longitude\": 72.74177536679889\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75311286470051,\n                                                        \"longitude\": 72.74173111035014\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75315858162201,\n                                                        \"longitude\": 72.74173111035014\n                                                    }\n                                                ]\n                                            },\n                                            {\n                                                \"spacing_number\": \"24\",\n                                                \"slot_id\": \"24\",\n                                                \"slot_coords\": [\n                                                    {\n                                                        \"latitude\": 33.753156351528844,\n                                                        \"longitude\": 72.74180084778453\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.753151891342334,\n                                                        \"longitude\": 72.74184510423328\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75310059918083,\n                                                        \"longitude\": 72.74183705760623\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.7531072894645,\n                                                        \"longitude\": 72.74180218888904\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.753156351528844,\n                                                        \"longitude\": 72.74180084778453\n                                                    }\n                                                ]\n                                            },\n                                            {\n                                                \"spacing_number\": \"25\",\n                                                \"slot_id\": \"25\",\n                                                \"slot_coords\": [\n                                                    {\n                                                        \"latitude\": 33.75314520106215,\n                                                        \"longitude\": 72.74186387969638\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.753146316108875,\n                                                        \"longitude\": 72.74191886498119\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75310282927545,\n                                                        \"longitude\": 72.74190813614513\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75310282927545,\n                                                        \"longitude\": 72.74185851527835\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75314520106215,\n                                                        \"longitude\": 72.74186387969638\n                                                    }\n                                                ]\n                                            },\n                                            {\n                                                \"spacing_number\": \"26\",\n                                                \"slot_id\": \"26\",\n                                                \"slot_coords\": [\n                                                    {\n                                                        \"latitude\": 33.753004705057435,\n                                                        \"longitude\": 72.74157554222728\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.753004705057435,\n                                                        \"longitude\": 72.74162516309406\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.7529734836918,\n                                                        \"longitude\": 72.74161711646701\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.7529734836918,\n                                                        \"longitude\": 72.74158358885433\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.753004705057435,\n                                                        \"longitude\": 72.74157554222728\n                                                    }\n                                                ]\n                                            },\n                                            {\n                                                \"spacing_number\": \"27\",\n                                                \"slot_id\": \"27\",\n                                                \"slot_coords\": [\n                                                    {\n                                                        \"latitude\": 33.75300024486306,\n                                                        \"longitude\": 72.74164930297519\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75300247496027,\n                                                        \"longitude\": 72.74169087721492\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.7529734836918,\n                                                        \"longitude\": 72.74169087721492\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75297013854481,\n                                                        \"longitude\": 72.74164930297519\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75300024486306,\n                                                        \"longitude\": 72.74164930297519\n                                                    }\n                                                ]\n                                            },\n                                            {\n                                                \"spacing_number\": \"28\",\n                                                \"slot_id\": \"28\",\n                                                \"slot_coords\": [\n                                                    {\n                                                        \"latitude\": 33.752991324473555,\n                                                        \"longitude\": 72.74172038151409\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.7529902094248,\n                                                        \"longitude\": 72.74176329685832\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75296233320132,\n                                                        \"longitude\": 72.74176195575382\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.752960103103035,\n                                                        \"longitude\": 72.74172172261859\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.752991324473555,\n                                                        \"longitude\": 72.74172038151409\n                                                    }\n                                                ]\n                                            },\n                                            {\n                                                \"spacing_number\": \"29\",\n                                                \"slot_id\": \"29\",\n                                                \"slot_coords\": [\n                                                    {\n                                                        \"latitude\": 33.75298017398539,\n                                                        \"longitude\": 72.74178609563495\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75297794388759,\n                                                        \"longitude\": 72.74181559993411\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.752954527857106,\n                                                        \"longitude\": 72.7418129177251\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.752954527857106,\n                                                        \"longitude\": 72.74177939011241\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75298017398539,\n                                                        \"longitude\": 72.74178609563495\n                                                    }\n                                                ]\n                                            },\n                                            {\n                                                \"spacing_number\": \"30\",\n                                                \"slot_id\": \"30\",\n                                                \"slot_coords\": [\n                                                    {\n                                                        \"latitude\": 33.75297571378972,\n                                                        \"longitude\": 72.74183571650173\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75297459874076,\n                                                        \"longitude\": 72.74186924411441\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.752943377364154,\n                                                        \"longitude\": 72.74186253859187\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75294895261082,\n                                                        \"longitude\": 72.74183303429271\n                                                    },\n                                                    {\n                                                        \"latitude\": 33.75297571378972,\n                                                        \"longitude\": 72.74183571650173\n                                                    }\n                                                ]\n                                            }\n                                        ]\n                                    }\n                                ]\n                       },          \n                    {\n                        \"zone_name\": \"Zone B\",\n                        \"rows\": [\n                            {\n                                \"rows_name\": \"Row 1\",\n                                \"slots\": [\n                                    {\n                                        \"spacing_number\": \"1\",\n                                        \"slot_id\": \"1\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"2\",\n                                        \"slot_id\": \"2\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"3\",\n                                        \"slot_id\": \"3\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"4\",\n                                        \"slot_id\": \"4\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"5\",\n                                        \"slot_id\": \"5\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"6\",\n                                        \"slot_id\": \"6\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"7\",\n                                        \"slot_id\": \"7\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"8\",\n                                        \"slot_id\": \"8\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"9\",\n                                        \"slot_id\": \"9\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"10\",\n                                        \"slot_id\": \"10\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"11\",\n                                        \"slot_id\": \"11\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"12\",\n                                        \"slot_id\": \"12\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"13\",\n                                        \"slot_id\": \"13\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"14\",\n                                        \"slot_id\": \"14\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"15\",\n                                        \"slot_id\": \"15\"\n                                    }\n                                ]\n                            },\n                            {\n                                \"rows_name\": \"Row 2\",\n                                \"slots\": [\n                                    {\n                                        \"spacing_number\": \"1\",\n                                        \"slot_id\": \"1\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"2\",\n                                        \"slot_id\": \"2\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"3\",\n                                        \"slot_id\": \"3\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"4\",\n                                        \"slot_id\": \"4\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"5\",\n                                        \"slot_id\": \"5\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"6\",\n                                        \"slot_id\": \"6\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"7\",\n                                        \"slot_id\": \"7\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"8\",\n                                        \"slot_id\": \"8\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"9\",\n                                        \"slot_id\": \"9\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"10\",\n                                        \"slot_id\": \"10\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"11\",\n                                        \"slot_id\": \"11\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"12\",\n                                        \"slot_id\": \"12\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"13\",\n                                        \"slot_id\": \"13\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"14\",\n                                        \"slot_id\": \"14\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"15\",\n                                        \"slot_id\": \"15\"\n                                    }\n                                ]\n                            }\n                        ]\n                    },\n                    {\n                        \"zone_name\": \"Zone C\",\n                        \"rows\": [\n                            {\n                                \"rows_name\": \"Row 1\",\n                                \"slots\": [\n                                    {\n                                        \"spacing_number\": \"1\",\n                                        \"slot_id\": \"1\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"2\",\n                                        \"slot_id\": \"2\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"3\",\n                                        \"slot_id\": \"3\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"4\",\n                                        \"slot_id\": \"4\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"5\",\n                                        \"slot_id\": \"5\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"6\",\n                                        \"slot_id\": \"6\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"7\",\n                                        \"slot_id\": \"7\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"8\",\n                                        \"slot_id\": \"8\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"9\",\n                                        \"slot_id\": \"9\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"10\",\n                                        \"slot_id\": \"10\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"11\",\n                                        \"slot_id\": \"11\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"12\",\n                                        \"slot_id\": \"12\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"13\",\n                                        \"slot_id\": \"13\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"14\",\n                                        \"slot_id\": \"14\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"15\",\n                                        \"slot_id\": \"15\"\n                                    }\n                                ]\n                            },\n                            {\n                                \"rows_name\": \"Row 2\",\n                                \"slots\": [\n                                    {\n                                        \"spacing_number\": \"1\",\n                                        \"slot_id\": \"1\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"2\",\n                                        \"slot_id\": \"2\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"3\",\n                                        \"slot_id\": \"3\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"4\",\n                                        \"slot_id\": \"4\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"5\",\n                                        \"slot_id\": \"5\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"6\",\n                                        \"slot_id\": \"6\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"7\",\n                                        \"slot_id\": \"7\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"8\",\n                                        \"slot_id\": \"8\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"9\",\n                                        \"slot_id\": \"9\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"10\",\n                                        \"slot_id\": \"10\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"11\",\n                                        \"slot_id\": \"11\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"12\",\n                                        \"slot_id\": \"12\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"13\",\n                                        \"slot_id\": \"13\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"14\",\n                                        \"slot_id\": \"14\"\n                                    },\n                                    {\n                                        \"spacing_number\": \"15\",\n                                        \"slot_id\": \"15\"\n                                    }\n                                ]\n                            }\n                        ]\n                    }\n                    \n                ]\n\n            }\n        ]\n    }\n]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dealer/map/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dealer",
+						"map",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_dealer_map",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJraWQiOiIxRkd4MnM5ckFpNThuSEhcLzQ1N05ydk5yTFY4R0cxOXZCb1REQmo3bzZTMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJiYWJlZTZhMS0xMTY4LTQwZTUtOGNjYS1hZTg0YWE1NzcyY2YiLCJjb2duaXRvOmdyb3VwcyI6WyJTYWxlc01hbmFnZXIiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfU0N5S2ZDVFg3IiwiY2xpZW50X2lkIjoiMnMyZmJybTQxb3RjZnEzdmczYmNwbmh1Z2YiLCJvcmlnaW5fanRpIjoiYmNlOTc0NjktYzk1Mi00MzFhLWE0ZDMtMDUyOTU2NDgyYjNiIiwiZXZlbnRfaWQiOiJmYjZlMDhjMi0xZWNhLTQxZWUtODFhOC0wNDhkOWFkYjEwYjciLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjY3NTM3NTAwLCJleHAiOjE2Njc2MjM5MDAsImlhdCI6MTY2NzUzNzUwMCwianRpIjoiNTQzMGIzNGYtMGE0ZC00YTY4LTk0YWQtYWZmZWQ2NWQxYTc1IiwidXNlcm5hbWUiOiJiYWJlZTZhMS0xMTY4LTQwZTUtOGNjYS1hZTg0YWE1NzcyY2YifQ.N5lHfM7q339-MgqB9cogRCfdqJ3kSEpjxxiMAV4GTFni5wMreM1XRxZ3_bW7OYu6kX859wO7-LDH7yzmleB2nem1smPeId0aZesRTFLawloTPmuBNiBQ0suq5H5RFjoPuVJ_pJlE54r-4hq5aE6wUFYAvwtMRyc0EO20cC_VmtLSED5ZUq8_MVDsqJXEDcnTyhNW7k6cDhnqeRQ-xdXdgWoLE8GP6PmmyqTWLC0yGEerdQnsrCdoupFHNCNcBzDXIq-NBzXk3U2EalPPkqRFyydyjD441U82TfsZFa5R-0KAwcJ2J1SOM1GinjL-gPXrTTY3ztpHQZIDUMdX39LiUg",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/dealer/map/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dealer",
+						"map",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_dealer_info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJraWQiOiIxRkd4MnM5ckFpNThuSEhcLzQ1N05ydk5yTFY4R0cxOXZCb1REQmo3bzZTMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJlNmVkZWMzNi01Mjg4LTRlMGYtYTY3MC1mYzM1NWMzYzNmYzUiLCJjb2duaXRvOmdyb3VwcyI6WyJTYWxlc01hbmFnZXIiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfU0N5S2ZDVFg3IiwiY2xpZW50X2lkIjoiMnMyZmJybTQxb3RjZnEzdmczYmNwbmh1Z2YiLCJvcmlnaW5fanRpIjoiMWQ2MjM5NTEtZmQwMy00MzhmLWFjYTMtN2IzZmQyYzE1ODczIiwiZXZlbnRfaWQiOiI1MjlkNjFhYi03Y2FmLTQ1YzktYmI0ZS1jYmY1YmEwZjRmY2MiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjY3ODEzMDE5LCJleHAiOjE2Njc4OTk0MTksImlhdCI6MTY2NzgxMzAxOSwianRpIjoiZWQ5ZTRmODktMWY0YS00YzMzLTlkNjEtMTUzYzY4YzM2NTM2IiwidXNlcm5hbWUiOiJlNmVkZWMzNi01Mjg4LTRlMGYtYTY3MC1mYzM1NWMzYzNmYzUifQ.PExkBjJ6Zg9LkajOJg5SK0GAi9xfHoRl6sDyywESOah0bbKygLYUMh9tBDDUGtllhX9fpW5B39gdY7f6ynuvpylgnfgOf-8jsPIARMVI5yT8EkBpcpmX7VjIyEon3aLNzoMAsj2_Ym0nh2rshqcMtoCGSXFJlg9Hf9dBVoFYVKDWMlLrzc3Dk9Y79kWAN3LeBslrcXBQAp1Tr4SUiQbRoBm5c_6czwm933zqAVXVMiHOPw3JXedXmN_23HHsxtWmA7FwzUW1VFrXFYKUWSgoXY44hBaNO2V-wnUS0EtBAR0Ni-AKRPxKmi2VKWSH6sMM_a3AcQqswO3C80dQCYMYVA",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/dealer/info",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dealer",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "decode_vin_api",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJraWQiOiIxRkd4MnM5ckFpNThuSEhcLzQ1N05ydk5yTFY4R0cxOXZCb1REQmo3bzZTMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJlNmVkZWMzNi01Mjg4LTRlMGYtYTY3MC1mYzM1NWMzYzNmYzUiLCJjb2duaXRvOmdyb3VwcyI6WyJTYWxlc01hbmFnZXIiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfU0N5S2ZDVFg3IiwiY2xpZW50X2lkIjoiMnMyZmJybTQxb3RjZnEzdmczYmNwbmh1Z2YiLCJvcmlnaW5fanRpIjoiMWQ2MjM5NTEtZmQwMy00MzhmLWFjYTMtN2IzZmQyYzE1ODczIiwiZXZlbnRfaWQiOiI1MjlkNjFhYi03Y2FmLTQ1YzktYmI0ZS1jYmY1YmEwZjRmY2MiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjY3ODEzMDE5LCJleHAiOjE2Njc4OTk0MTksImlhdCI6MTY2NzgxMzAxOSwianRpIjoiZWQ5ZTRmODktMWY0YS00YzMzLTlkNjEtMTUzYzY4YzM2NTM2IiwidXNlcm5hbWUiOiJlNmVkZWMzNi01Mjg4LTRlMGYtYTY3MC1mYzM1NWMzYzNmYzUifQ.PExkBjJ6Zg9LkajOJg5SK0GAi9xfHoRl6sDyywESOah0bbKygLYUMh9tBDDUGtllhX9fpW5B39gdY7f6ynuvpylgnfgOf-8jsPIARMVI5yT8EkBpcpmX7VjIyEon3aLNzoMAsj2_Ym0nh2rshqcMtoCGSXFJlg9Hf9dBVoFYVKDWMlLrzc3Dk9Y79kWAN3LeBslrcXBQAp1Tr4SUiQbRoBm5c_6czwm933zqAVXVMiHOPw3JXedXmN_23HHsxtWmA7FwzUW1VFrXFYKUWSgoXY44hBaNO2V-wnUS0EtBAR0Ni-AKRPxKmi2VKWSH6sMM_a3AcQqswO3C80dQCYMYVA",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/vehicle/decodevin/JTDKB20U863129127",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vehicle",
+						"decodevin",
+						"JTDKB20U863129127"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_staff_assigned_vehicle",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJraWQiOiIxRkd4MnM5ckFpNThuSEhcLzQ1N05ydk5yTFY4R0cxOXZCb1REQmo3bzZTMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjZWVkYzg5MS1iNzlhLTQ5ZDMtOWYzOS01YWQ1YjBkNDFjZDMiLCJjb2duaXRvOmdyb3VwcyI6WyJTYWxlc01hbmFnZXIiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfU0N5S2ZDVFg3IiwiY2xpZW50X2lkIjoiMnMyZmJybTQxb3RjZnEzdmczYmNwbmh1Z2YiLCJldmVudF9pZCI6ImFlNDA3ZTFiLTA2YzktNDQ0Yy05ODA0LTk3MDdlOGM3MDBjMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2Njc5NzgxNjEsImV4cCI6MTY2ODA2NDU2MSwiaWF0IjoxNjY3OTc4MTYxLCJqdGkiOiI0ZGQ5MDUyNC05ZWUxLTQ0ODMtYWUwNC1kNmZmMjQ3YzUyMWQiLCJ1c2VybmFtZSI6ImNlZWRjODkxLWI3OWEtNDlkMy05ZjM5LTVhZDViMGQ0MWNkMyJ9.blpm8LuQiSDiXm3CCfMZVCJKbo0mfgjyRIU6QYRiIr-02ceI3W0aGvGFGOxx2MZRGQO9KeInaC5CYXmDoKHk4J1_p5VLtNbyFBfcdMZgHt5UxaPy4J2yUFMNqOiRTk3MQ2o_uRKwZB5SE5NPzxgppN_pvS7-sdJ8qA7HTFKGE40i3VAgEI0XTL8z2jEPAAnLdrMkQVouQ4KVpgJsETEEDCVjL8oQ7I9d3hW3oZ9WP6QxzqXDfaSMA75xikanUeP4QHrK7hMD-rhzyX40LPg-pxArljMkrr3pjD6B_JZMcrlXCButhjTGNpg7lQojcM2jpk1jNGt63pDSK1oQ8m8pjw",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/vehicle/assigned/d668fb4c-ad25-445a-8614-bcf42975ef3a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vehicle",
+						"assigned",
+						"d668fb4c-ad25-445a-8614-bcf42975ef3a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check_in_out_vehicle",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJraWQiOiIxRkd4MnM5ckFpNThuSEhcLzQ1N05ydk5yTFY4R0cxOXZCb1REQmo3bzZTMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJiOTA0ODdjZC0yMmJiLTQxNjEtOTA2ZS1iYjgwMTY3NzhmYzIiLCJjb2duaXRvOmdyb3VwcyI6WyJMb3RQb3J0ZXIiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfU0N5S2ZDVFg3IiwiY2xpZW50X2lkIjoiMnMyZmJybTQxb3RjZnEzdmczYmNwbmh1Z2YiLCJldmVudF9pZCI6ImZhYTVlMDc1LTM0OWItNGFmNC1iMzUxLTUyNzY1ODkxOTUxOCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2Njg1OTQ1NDAsImV4cCI6MTY2ODY4MDk0MCwiaWF0IjoxNjY4NTk0NTQwLCJqdGkiOiI0ZDk0NzM4YS00NjkxLTRhZjUtYTg4Mi0wNTAyNGY1ZDhmYmYiLCJ1c2VybmFtZSI6ImI5MDQ4N2NkLTIyYmItNDE2MS05MDZlLWJiODAxNjc3OGZjMiJ9.ovv1EExWVJIdWWBSZaqP1H_FS9FsBNztCCi20Eofac8Wgb7Na1uyo89ju20RDR0oO2OkWdE_sxx6Gs1pP2TjBTffo1nXYPlXvEo1g5nUlc2vU1t4nYFKmSd7UI1CAtFOWeR0P1bsUsVMoa4QCnvF03-XxT5y29OCZlRZlvFKzpm_xjgK4KCZXtgU_Wl6rkSp-fOVU-WVVLs5IqOPN631ecHqmZx06TM1dQ1s64N9eoI6Ql1wFkObda3OMZBXuO-BHhJyHtp0ldviutURN291HYupj-cPM-ZyYR9D2ZOFurLNWkLQ2G-Q-jSO9t8MjL4DPE9YVab-HLAOvfB1glCzgA",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"check_in_out_vehicle\": {\n        \"veh_id\": \"1c3d4698-8783-41b2-a6ba-952311257af5\",\n        \"slot_id\": \"3556b3dc-0d55-4c75-9034-d598e4f8db02\"\n            }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/vehicle/checkinout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vehicle",
+						"checkinout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adding_new_vehicle_to_map",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJraWQiOiIxRkd4MnM5ckFpNThuSEhcLzQ1N05ydk5yTFY4R0cxOXZCb1REQmo3bzZTMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2ZjBiMjM5NS0yMzNlLTQzNjItOWM0MS0wNjU5MGY3NmQ5MjgiLCJjb2duaXRvOmdyb3VwcyI6WyJJVEFkbWluaXN0cmF0b3IiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfU0N5S2ZDVFg3IiwiY2xpZW50X2lkIjoiMnMyZmJybTQxb3RjZnEzdmczYmNwbmh1Z2YiLCJldmVudF9pZCI6IjUwMjMzOGZlLTUzMDYtNGY1OS1hNTgwLWIwYzlmOTEwZjNjMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2Njg2NjkyMjgsImV4cCI6MTY2ODc1NTYyOCwiaWF0IjoxNjY4NjY5MjI4LCJqdGkiOiJlN2EwYzUxYS1hOGM5LTRjNDYtODIwYy1jMmIzMGIyZGM2YTAiLCJ1c2VybmFtZSI6IjZmMGIyMzk1LTIzM2UtNDM2Mi05YzQxLTA2NTkwZjc2ZDkyOCJ9.fgSxyMxjiXD8-MqgmvevFSpSjx12gTzej26olDmkJ00VqJkb_YJIVJ3kNFmvpcLEQcLgzj242VX2qGeRuZMZBWtv4V8hdjFOUJrIo9yR_L5fAhl5rG8i97NVa5gyIvSHSuCmBjZ8ahXWGSbfYYunq2DCfMrrE2-QvWLM_Yg3_3Oe9lG9uY4TvnX28723Hpw38WQZoNpdZG5U7Oo0sOjAYLHFfHE-pbgM1NHHSqx-5aKg4mPlLXv7Xmuq6YBo42PpoqwLroMQsRvXWcclcQ46WA-B4Svq2ZeA3P_6xpy16Ct3YvEKRhQiECsK9l0CdFFAL3Qii348TXR9AuXqKrr6PQ",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"vehicle_to_map\":{\n        \"veh_id\": \"e3ef36c8-9b86-4acc-89c8-4045dee8ad3f\",\n        \"slot_id\": \"181ab427-39ca-42d3-b414-019f99edc2a4\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/vehicle/add/map",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vehicle",
+						"add",
+						"map"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

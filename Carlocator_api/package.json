@@ -1,0 +1,23 @@
+{
+  "name": "carlocator-api",
+  "version": "1.0.0",
+  "description": "API for Carlocator Findr App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./node_modules/.bin/serverless offline start --useDocker --stage local",
+    "watch": "nodemon --watch ./ -e go,js --exec make build",
+    "deploy":"npm run deploy:dev && npm run deploy:staging && npm run deploy:production",
+    "deploy:dev": "sls deploy -c serverless.yaml --stage dev",
+    "deploy:staging": "sls deploy -c serverless.yaml --stage staging",
+    "deploy:production": "sls deploy -c serverless.yaml --stage production"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.19",
+    "serverless": "^3.2.0",
+    "serverless-domain-manager": "^6.1.0",
+    "serverless-offline": "^8.4.0"
+  }
+}

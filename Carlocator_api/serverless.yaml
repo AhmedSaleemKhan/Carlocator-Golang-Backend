@@ -1,0 +1,272 @@
+service: carlocator
+
+frameworkVersion: "3.2.0"
+
+provider:
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - cognito-idp:AdminConfirmSignUp
+        - cognito-idp:AdminAddUserToGroup
+        - cognito-idp:AdminSetUserPassword
+      Resource: "*"
+    - Effect: Allow
+      Action:
+        - s3:PutObject
+      Resource: "arn:aws:s3:::carlocator-dev/*"
+    - Effect: Allow
+      Action:
+        - ses:SendEmail            
+        - ses:SendRawEmail         
+      Resource: '*'     
+  environment:
+    ENV: ${opt:stage}
+  httpApi:
+    cors: true
+  name: aws
+  region: us-east-1
+  stage: ${opt:stage}
+  runtime: go1.x
+  lambdaHashingVersion: 20201221
+
+plugins:
+  - serverless-offline
+  - serverless-domain-manager
+
+params:
+  dev:
+    domain: devapi.findr.click
+    certificateName: devapi.findr.click
+  staging:
+    domain: stagingapi.findr.click
+    certificateName: stagingapi.findr.click
+  production:
+    domain: api.findr.click
+    certificateName: api.findr.click
+   
+custom:
+  serverless-offline:
+    useDocker: true
+  customDomain:
+    apiType: http
+    domainName: ${param:domain}
+    certificateName: ${param:domain}
+    createRoute53Record: true
+    endpointType: regional
+
+package:
+  exclude:
+    - ./**
+  include:
+    - ./bin/**
+    - .env.dev
+    - .env.staging
+    - .env.production
+
+functions:    
+  DealerSignup:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /dealer/signup
+          method: post
+  DealerVerfiyOTP:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /dealer/verifyotp
+          method: post    
+  DealerForgotPassword:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /dealer/forgotpassword
+          method: post
+  DealerForgotConfirm:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /dealer/forgotconfirm
+          method: post  
+  DealerSignOut:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /dealer/signout
+          method: post
+  GetDealerInformation:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /dealer/info
+          method: get
+  S3UploadAwsDealership:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /dealer/s3/upload
+          method: post
+  UpdateDealerShip:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /dealer/update
+          method: patch 
+  DealerResendOTP:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /dealer/resend/otp
+          method: post
+  CreateDealerMap:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /dealer/map/create
+          method: post
+  GetDealerMaps:
+    handler: bin/carlocator
+    timeout: 30
+    memorySize: 3008
+    events:
+      - httpApi:
+          path: /dealer/map/get
+          method: get
+  CheckInOutVehicle:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /vehicle/checkinout
+          method: post
+          
+# Vehciles
+  VehicleVinNumber:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /vehicle/decodevin/{vin_number}
+          method: get    
+  AddNewVechicle:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /vehicle/add
+          method: post    
+  MultipleVinNumber:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /vehicle/decodevin/multiple_vin
+          method: post    
+  CreateKey:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /vehicle/createkey
+          method: post 
+  GetDealerVehicles:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /vehicle/all
+          method: get    
+  AddMultipleVehicles:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /vehicle/multiple
+          method: post
+  AssignUnassignKey:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /vehicle/assingunassignkey
+          method: post 
+  DeleteKey:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /vehicle/key/{key_id}
+          method: delete    
+  GetVehicleKeys:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /vehicle/keys/{veh_id}
+          method: get
+  CsvToJson:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /vehicle/csvtojson
+          method: post
+  DeleteVehicle:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /vehicle/{veh_id}
+          method: delete
+  AssignedVehicleKeys:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /vehicle/assignedkeys
+          method: get        
+  UpdateVehicle:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /vehicle/update/{veh_id}
+          method: patch
+  UpdateVehicleKey:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /vehicle/key/update/{key_id}
+          method: patch       
+  GetStaffAssignedVehicles:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /vehicle/assigned
+          method: get 
+   AddNewVehicleToMap:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /vehicle/add/map
+          method: post     
+
+# Staff
+  StaffSignup:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /dealer/staff/signup
+          method: post
+  StaffResetPassword:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /dealer/staff/resetpassword
+          method: post
+  GetStaffmembers:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /dealer/staff/getdealerstaff
+          method: get
+  # Other
+  SignIn:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /signin
+          method: post
+  RenewToken:
+    handler: bin/carlocator
+    events:
+      - httpApi:
+          path: /renewtoken
+          method: post
+
